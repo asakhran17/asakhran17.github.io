@@ -203,8 +203,9 @@
 .banner2 {
 	height: 150px;
 	width: 1260px;
+	left: 20%;
 	background-color: rgba(243, 184, 184, 0.3);
-	padding-top: 120px;
+	padding-top: 100px;
 	text-align: center;
 	color: rgba(232, 83, 83, 0.72);
 	font-style: italic;
