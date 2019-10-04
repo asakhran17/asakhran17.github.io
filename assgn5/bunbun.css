@@ -136,15 +136,15 @@
 #home_order {
 	position: absolute;
 	width: 400px;
-	height: 100px;
+	height: 80px;
 	background-color: rgba(232, 106, 106, 0.8);
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
 	padding-top: 2%;
 	font-size: 36pt;
-	top: 70%;
-	left: 35%;
+	top: 50%;
+	left: 30%;
 	z-index: 10;
 
 }
@@ -189,7 +189,7 @@
 	position: absolute;
 	width: 1200px;
 	top: 50%;
-	left: 50%;
+	left: 45%;
 	transform: translate(-50%, -50%);
 	color: #FFFFFF;
 	font-size: 80pt;
