@@ -1,0 +1,449 @@
+/* ----------- Page Container ---------------- */
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* ----------- Shipping Information Bar ---------------- */
+
+.shipping {
+	top: 0;
+	background-color: grey;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+/* ----------- Navigation Bar ---------------- */
+
+.navigation {
+	display: grid;
+	/* border: 1px blue solid; */
+	/* width: 85%;
+	height: 10%;
+	position: fixed;
+	margin: 0 auto; */
+	grid-template: 1fr / 1fr 4fr 1fr;
+	z-index: 20;
+	background-color: white;
+	font-family: sans-serif;
+}
+
+.box {
+	margin: 0%;
+	padding: 0%;
+	/* border: 1px blue solid; */
+}
+
+.nav {
+	padding: 1.5%;
+	/* padding: 1.5% 0; */
+}
+
+.links {
+	float: left;
+	padding: 2%;
+}
+
+.nav_style {
+	text-decoration: none;
+	color:black;
+}
+
+#logo1 {
+	width: 60%;
+	padding-bottom: 0%;
+	padding-top: 0%;
+	margin-bottom: 0%;
+}
+
+#cart {
+	width: 30%;
+	padding-left: 50%;
+	padding-top: 5%;
+	padding-bottom: 0%;
+	margin-bottom: 0%;
+}
+
+#cart_number {
+	width: 30%;
+	padding-top: 0%;
+	padding-bottom: 8%;
+	margin-bottom: 0%;
+	display: inline;
+}
+
+
+/* ----------- Browse Page Display ---------------- */
+
+.filters {
+	padding-top: 10px;
+	width: 20%;
+	float: left;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+
+.products {
+	display: grid;
+	grid-template: 3fr 1fr 3fr 1fr 3fr 1fr/ 1fr 1fr 1fr;
+	/* border: 1px blue solid; */
+}
+
+.product_detail {
+	display: grid;
+	grid-template: repeat(5, 1fr) / 1fr 1fr;
+	/* border: 1px blue solid; */
+
+}
+
+
+
+/* ----------- Welcome Page Images & Text ---------------- */
+
+.hero_container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+#hero1 {
+	width: 100%;
+	height: auto;
+}
+
+.grey_hero {
+	position: absolute;
+	width: 1600px;
+	height: 1200px;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.2); 
+	z-index: 5;
+
+}
+
+.logo_hero {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 0;
+	left: 20%;
+	z-index: 7;
+
+}
+
+.logo_hero img {
+	width: 130%;
+
+}
+
+#home_order {
+	position: absolute;
+	width: 400px;
+	height: 80px;
+	background-color: rgba(232, 106, 106, 0.8);
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	padding-top: 2%;
+	font-size: 36pt;
+	top: 50%;
+	left: 30%;
+	z-index: 10;
+
+}
+
+#home_order a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/* ----------- Banners on Home Page ---------------- */
+
+.banner1 {
+	position: relative;
+	height: 400px;
+	width: 1260px;
+	padding-top: 50px;
+	overflow: hidden; 
+	text-align: center;
+	color: white;
+	/*object-fit: contain; */
+}
+
+.banner1 img{
+	height: auto;
+	width: 1260px;	
+}
+
+
+.grey1 {
+	position: absolute;
+	height: 400px;
+	width: 1260px;
+	padding-top: 50px;
+	top: 0;
+	left: 0;
+	background-color:rgba(255,255,255,0.3); 
+	z-index: 5;
+}
+
+ .banner_text {
+	position: absolute;
+	width: 1200px;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	color: #FFFFFF;
+	font-size: 80pt;
+	font-weight: bold;
+	font-family: chalkduster;
+	z-index: 7;
+	text-align: center;
+
+} 
+
+.banner2 {
+	height: 150px;
+	width: 1260px;
+	background-color: rgba(243, 184, 184, 0.3);
+	padding-top: 100px;
+	text-align: center;
+	margin: auto;
+	color: rgba(232, 83, 83, 0.72);
+	font-style: italic;
+	font-size: 24pt;
+	/*object-fit: contain; */
+}
+
+hr {
+	margin-top: 0%;
+	padding-top: 0%;
+	margin-bottom: 3%;
+}
+
+h1{
+	font-family: sans-serif;
+	font-weight: 12pt;
+	color: #EA6A6A;
+	text-align: center;
+	font-size: 30pt;
+
+}
+
+h2 {
+	font-family: sans-serif;
+}
+
+h3{
+	font-family: sans-serif;
+	font-weight: 10;
+	line-height: 0.5;
+}
+
+h4 {
+	font-family: sans-serif;
+	color: #F99999;
+}
+
+.banner_grid {
+	display: grid;
+	grid-template: 3fr 1fr / 1fr 1fr 1fr;
+	/* border: 1px blue solid; */
+}
+
+.best_seller {
+	width: 70%;
+	height: auto;
+} 
+
+.b1 {
+	padding-top: 10px;
+	text-align: center;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+.product1 {
+	grid-area: 1 / 1 / 2 / 1;
+	width: 80%;
+	height: auto;
+} 
+
+.glaze {
+	background-color: rgba(255, 255, 255, 0,7);
+	font-family: sans-serif;
+}
+
+/* Grid Span 3 rows & 2 columns */
+.description {
+	grid-area: 2 / 1 / 4 / 3;
+}
+
+.add_cart {
+	width: 40%;
+	height: 5%;
+    padding-top: 1%;
+	background-color: #F99999;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+
+.add_cart:hover {
+		background-color: #ff6666;
+}
+
+.thumbnail {
+	width: 20%;
+	height: auto;
+	margin-left: 70%;
+}
+
+
+
+/* ----------- Product Page Reviews ---------------- */
+
+.reviews {
+	grid-area: 4 / 1 / 8 / 3;
+}
+
+.review_people {
+	display: grid;
+	grid-template: 1fr 1fr 1fr 1fr / 1fr 3fr;
+	/* border: 1px blue solid; */
+}
+
+.review_title {
+	grid-area: 1 / 1 / 2 / span 4;
+}
+
+.review_customer_box {
+	text-align: center;
+}
+
+.review_customer {
+	width: 60%;
+}
+
+.small_stars {
+	width: 20%;
+}
+
+
+/* ----------- Shopping Cart Elements ---------------- */
+
+.cart_page_grid {
+	display: grid;
+	grid-template: 1fr / 1fr 6fr;
+}
+
+.cart_display {
+	display: grid;
+	grid-template: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr / 1fr 0.75fr 0.5fr 0.5fr;
+	text-align: left;
+	padding: 30px 0;
+	/* border: 1px blue solid; */
+}
+
+#shopping_title {
+	margin-left: 10%;
+}
+
+.item_cart_pic {
+	width: 40%;
+	height: auto;
+	margin-left: 25%;
+	margin-bottom: 0%;
+	padding-bottom: 2%;
+}
+
+.cart_content1 {
+	padding: 20% 0;
+}
+
+.cart_content1 h4, h3 {
+	padding-top: 0%;
+	margin-top: 0%;
+}
+
+.select_1 {
+	width: 80px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.remove {
+	border: 0.5px grey solid;
+	border-radius: 5px;
+	width: 80px;
+	text-align: center;
+	color: #727375;
+	font-size: 10pt;
+	font-family: sans-serif;
+}
+
+.total_grid {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.total_grid h3, h4 {
+	padding: 0%;
+	margin: 0%;
+	line-height: 50pt;
+}
+
+#total1 {
+	color: black;
+}
+
+#proceed_to_checkout {
+	grid-row: 2;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	background-color: #F99999;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: center;
+	height: 20%;
+	padding-top: 4%;
+	/* padding-bottom: 2%; */
+}
+
+#proceed_to_checkout:hover {
+		background-color: #ff6666;
+}
+
+#ban1 {
+	overflow: contain;
+}
+
+
+/* ----------- Footer ---------------- */
+
+.sm_icon {
+	width: 3%;
+	margin: 0.5%;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	background-color: #F99999;
+	margin-top: 1%;
+	margin-bottom: 0%;
+	padding: 2%;
+	font-size: 10pt;
+	line-height: 12pt;
+}
+
+
+
+
