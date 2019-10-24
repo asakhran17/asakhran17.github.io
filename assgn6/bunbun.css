@@ -296,7 +296,7 @@ h4 {
 }
 
 .add_cart:hover {
-		background-color: #ff6666;
+	background-color: #ff6666;
 }
 
 .thumbnail {
@@ -305,6 +305,9 @@ h4 {
 	margin-left: 70%;
 }
 
+.thumbnail:hover {
+	opacity: 0.5;
+}
 
 
 /* ----------- Product Page Reviews ---------------- */

@@ -34,9 +34,9 @@
 
        <!--Main Section -->
       <div class="filters">
-       <img class="thumbnail" src="images/product1.jpg" id="thumb1" onclick="ChangeImage()"> 
+       <img class="thumbnail" src="images/product1.jpg" id="thumb1" onclick="ChangeImage('images/product1.jpg')"> 
        <br>
-       <img class="thumbnail" src="images/product1.jpg" id="thumb2" onclick="ChangeImage()"> 
+       <img class="thumbnail" src="images/pear.jpg" id="thumb2" onclick="ChangeImage('images/pear.jpg')"> 
        <br>
        <img class="thumbnail" src="images/product2.jpg" id="thumb3" onclick="ChangeImage('images/product2.jpg')"> 
       </div>
@@ -50,19 +50,19 @@
             <h2> ORIGINAL </h2> 
             <br>
             <h3>GLAZE</h3>
-              <input type="radio" name="glaze" value="none" onclick="ChangeImage('images/product1.jpg')"> None <br>
+              <input type="radio" name="glaze" value="none" checked="checked" onclick="ChangeImage('images/product1.jpg')"> None <br>
               <input type="radio" name="glaze" value="sugar" onclick="ChangeImage('images/strawberry.jpg')"> Strawberry <br>
               <input type="radio" name="glaze" value="none" onclick="ChangeImage('images/choco.jpg')"> Chocolate <br>
               <input type="radio" name="glaze" value="none" onclick="ChangeImage('images/pear.jpg')"> Pear <br>
             <br>
             <h3>QUANTITY</h3>
-            <select name="quantity">
-              <option value="1"> 1 </option>
-              <option value="3"> 3 </option>
-              <option value="6"> 6 </option>
-              <option value="9"> 9 </option>
-              <option value="12"> 12 </option>
-            </select>
+              <select name="quantity" id="qty1">
+                <option value="1"> 1 </option>
+                <option value="3"> 3 </option>
+                <option value="6"> 6 </option>
+                <option value="9"> 9 </option>
+                <option value="12"> 12 </option>
+              </select>
 
             <br><br>
             <h3>PRICE</h3>
