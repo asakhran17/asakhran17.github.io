@@ -429,6 +429,15 @@ h4 {
 }
 
 
+#cart_table, #subtotal {
+	padding-left: 30px;
+}
+
+
+td {
+	margin-right: 10%;
+}
+
 /* ----------- Footer ---------------- */
 
 .sm_icon {

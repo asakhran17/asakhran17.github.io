@@ -47,13 +47,15 @@
             <img class="product1" src="images/product1.jpg" id="key_image"> 
           </div>
           <div> 
-            <h2> ORIGINAL </h2> 
+            <h2 id="flavor">ORIGINAL</h2> 
             <br>
+            <form id="glaze_choice">
             <h3>GLAZE</h3>
               <input type="radio" name="glaze" value="none" checked="checked" onclick="ChangeImage('images/product1.jpg')"> None <br>
-              <input type="radio" name="glaze" value="sugar" onclick="ChangeImage('images/strawberry.jpg')"> Strawberry <br>
-              <input type="radio" name="glaze" value="none" onclick="ChangeImage('images/choco.jpg')"> Chocolate <br>
-              <input type="radio" name="glaze" value="none" onclick="ChangeImage('images/pear.jpg')"> Pear <br>
+              <input type="radio" name="glaze" value="strawberry" onclick="ChangeImage('images/strawberry.jpg')"> Strawberry <br>
+              <input type="radio" name="glaze" value="chocolate" onclick="ChangeImage('images/choco.jpg')"> Chocolate <br>
+              <input type="radio" name="glaze" value="pear" onclick="ChangeImage('images/pear.jpg')"> Pear <br>
+            </form>
             <br>
             <h3>QUANTITY</h3>
               <select name="quantity" id="qty1">
@@ -64,11 +66,12 @@
                 <option value="12"> 12 </option>
               </select>
 
+
             <br><br>
             <h3>PRICE</h3>
-            $2.50
+            <div id="price">$2.50</div>
             <br><br>
-            <div class="add_cart" onclick="UpdateCart()">
+            <div class="add_cart" onclick="UpdateCart(); StoreCart()">
               ADD TO CART
             </div>
           </div>
