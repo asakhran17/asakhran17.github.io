@@ -1,4 +1,3 @@
-//import lozad from 'lozad'
 
 
 jQuery(document).ready(function( $ ) {
@@ -26,6 +25,7 @@ jQuery(document).ready(function( $ ) {
 			$('#theMenu').toggleClass('menu-open');
 	  });
 
+    // Instantiating lozad class to fade & lazy load images upon scroll 
     lozad('.lozad', {
     load: function(el) {
         el.src = el.dataset.src;
@@ -38,72 +38,9 @@ jQuery(document).ready(function( $ ) {
 
 });
 
-//Lazy load images on the page
-//const observer = lozad();
-//observer.observe();
-
-// lozad('.lozad', {
-//     load: function(el) {
-//         el.src = el.dataset.src;
-//         el.onload = function() {
-//             el.classList.add('fade')
-//         }
-//     }
-// }).observe()
 
 // Credit to Tobias Ahlin free text animation code
-anime.timeline({loop: false})
-
-  .add({
-    targets: '.ml5 .line',
-    opacity: [0.5,1],
-    scaleX: [0, 1],
-    easing: "easeInOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml5 .line',
-    duration: 600,
-    easing: "easeOutExpo",
-    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
-  })
-  .add({
-    targets: '.ml5 .ampersand',
-    opacity: [0,1],
-    scaleY: [0.5, 1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=600'
-  })
-  .add({
-    targets: '.ml5 .letters-left',
-    opacity: [0,1],
-    translateX: ["0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=300'
-  })
-  .add({
-    targets: '.ml5 .letters-right',
-    opacity: [0,1],
-    translateX: ["-0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=600'
-  })
-
-  //.add({
-    //targets: '.ml5',
-    //opacity: 0,
-    //duration: 1000,
-    //easing: "easeOutExpo",
-    //delay: 1000
-  //})
-
-  ;
-
-
- // Wrap every letter in a span
+// Wrap every letter in a span
 var textWrapper = document.querySelector('.ml1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -116,7 +53,7 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     duration: 600,
     delay: (el, i) => 70 * (i+1)
-  }).add({
+  }) .add({
     targets: '.ml1 .line',
     scaleX: [0,1],
     opacity: [0.5,1],
@@ -124,7 +61,7 @@ anime.timeline({loop: true})
     duration: 700,
     offset: '-=875',
     delay: (el, i, l) => 80 * (l - i)
-  })
+  }) 
   /* .add({
     targets: '.ml1',
     opacity: 0,
@@ -132,5 +69,56 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   })*/ 
+  ;
+
+// Credit to Tobias Ahlin free text animation code
+anime.timeline({loop: false})
+
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 500
+  })
+  .add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  })
+  .add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 400,
+    offset: '-=600'
+  })
+  .add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 400,
+    offset: '-=300'
+  })
+  .add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 400,
+    offset: '-=600'
+  })
+
+  //.add({
+    //targets: '.ml5',
+    //opacity: 0,
+    //duration: 1000,
+    //easing: "easeOutExpo",
+    //delay: 1000
+  //})
+
   ;
 
